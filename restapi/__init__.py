@@ -2,9 +2,8 @@ import os
 
 from flask import Flask
 
-app = Flask(__name__, instance_relative_config=True)
-
 def create_app(test_config=None):
+    app = Flask(__name__, instance_relative_config=True)
     # create and configure the app
     app.config.from_mapping(
         SECRET_KEY='dev',
