@@ -29,7 +29,7 @@ def create_app(test_config=None):
     from . import auth
     app.register_blueprint(auth.bp)
 
-    from . import routes
-    app.register_blueprint(routes.bp)
+    from . import views
+    app.register_blueprint(views.bp)
 
     return app
